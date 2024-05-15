@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5% 20%;
+  background: linear-gradient(
+    to top right,
+    rgba(128, 128, 128, 0),
+    rgb(128, 128, 128)
+  );
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header button {
+  width: 30%;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+header button:hover {
+  color: whitesmoke;
+  background-color: rgb(90, 89, 89);
+}
+
+.template {
+  width: 60%;
+  height: 40%;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  top: 75px;
+  left: 20%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 3px rgb(142, 142, 142);
+  z-index: 1;
+}
+
+.template .part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.template .part1 h1 {
+  font-size: 1.5rem;
+}
+
+.template .part1 button {
+  width: 10%;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.template .part1 button:hover {
+  background-color: rgb(90, 89, 89);
+  color: whitesmoke;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  /* z-index: 5; */
+}
+
+.hidden {
+  display: none;
+}
