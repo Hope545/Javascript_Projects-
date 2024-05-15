@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig game JS</title>
+
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        This is a <span style="color: rgb(145, 5, 131)">two</span>
+        <span style="color: rgb(0, 23, 116)">player</span> dice game!
+      </h1>
+    </header>
+
+    <main>
+      <section class="one active-player-region">
+        <div class="part1">
+          <p class="player1 player1-play active-player">Player 1</p>
+          <p class="highscore player1-highscore active-highscore">0</p>
+        </div>
+
+        <div class="part2 player1-part2 active-part2">
+          <p class="score player1-current active-current">CURRENT</p>
+          <p class="score-value player1-score-value active-score-value">0</p>
+        </div>
+      </section>
+
+      <section class="two">
+        <div class="part1">
+          <p class="player2 player2-play">Player 2</p>
+          <p class="highscore player2-highscore">0</p>
+        </div>
+
+        <div class="part2 player2-part2">
+          <p class="score player2-current">CURRENT</p>
+          <p class="score-value player2-score-value">0</p>
+        </div>
+      </section>
+    </main>
+
+    <button class="roll-dice">🎲 ROLL DICE</button>
+    <button class="hold">📥 HOLD</button>
+    <button class="new-game">🔁 NEW GAME</button>
+
+    <div>
+      <img
+        src="dice/dice-1.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-1 dice hidden"
+      />
+      <img
+        src="dice/dice-2.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-2 dice hidden"
+      />
+
+      <img
+        src="dice/dice-3.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-3 dice hidden"
+      />
+
+      <img
+        src="dice/dice-4.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-4 dice hidden"
+      />
+
+      <img
+        src="dice/dice-5.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-5 dice hidden"
+      />
+
+      <img
+        src="dice/dice-6.png"
+        alt=""
+        width="100px"
+        height="100px"
+        class="dice-6 dice hidden"
+      />
+    </div>
+
+    <script src="JS.js"></script>
+  </body>
+</html>

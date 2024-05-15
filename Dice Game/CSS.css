@@ -1,0 +1,251 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to top left,
+    rgb(1, 16, 76),
+    rgb(145, 5, 131)
+  );
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+  width: 100%;
+}
+
+header h1 {
+  margin: 7% 20% 3% 20%;
+  border: 2px solid rgba(0, 0, 0, 0.13);
+  border-radius: 50px;
+  color: rgb(29, 28, 28);
+  background: linear-gradient(to right, rgb(198, 198, 198), rgb(223, 215, 215));
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+section {
+  width: 28%;
+  height: 400px;
+  padding: 10px;
+}
+
+.one {
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(233, 228, 228, 0.425);
+}
+
+.two {
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(233, 228, 228, 0.425);
+}
+
+.player1,
+.player2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.highscore {
+  font-size: 2.6em;
+  text-align: center;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.737);
+}
+
+.part2 {
+  background-color: rgba(156, 5, 141, 0.47);
+  width: 45%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.score {
+  font-size: 1em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.score-value {
+  font-size: 1.5em;
+  margin-top: -5px;
+}
+
+.one .part2 .score,
+.one .part2 .score-value {
+  position: relative;
+  top: 10px;
+}
+
+.new-game {
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.662);
+  padding: 5px 10px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: rgba(245, 245, 245, 0.753);
+}
+
+.one .part1 {
+  position: relative;
+  top: 10px;
+}
+
+.one .part2 {
+  margin-top: 50px;
+}
+
+.two .part2 {
+  position: relative;
+  top: 15px;
+}
+
+.roll-dice,
+.hold {
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.662);
+  background-color: rgba(245, 245, 245, 0.785);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.roll-dice {
+  width: 130px;
+  position: absolute;
+  left: 50%;
+  top: 73%;
+  transform: translateX(-50%);
+}
+
+.hold {
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+}
+
+.two .part2 .score {
+  margin-top: 30px;
+}
+
+/* .one-hidden {
+  background-color: rgba(233, 228, 228, 0.811);
+}
+
+.two-hidden {
+  background-color: rgba(233, 228, 228, 0.811);
+} */
+
+.dice-1,
+.dice-2,
+.dice-3,
+.dice-4,
+.dice-5,
+.dice-6 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.active-player {
+  font-weight: bolder;
+  font-size: 1.7em;
+  color: rgb(29, 28, 28);
+}
+
+.active-highscore {
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+}
+
+.active-player-region {
+  background-color: rgba(233, 228, 228, 0.619);
+}
+
+.active-current {
+  font-weight: bold;
+  color: rgb(29, 28, 28);
+}
+
+.active-score-value {
+  font-weight: bold;
+  color: rgb(29, 28, 28);
+}
+
+.active-part2 {
+  background-color: rgba(156, 5, 141, 0.701);
+}
+
+img {
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.457);
+}
+
+.game-winner {
+  background: rgba(0, 0, 0, 0.313);
+}
+
+.player-winner {
+  color: gold;
+  z-index: 1;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+.winner-highscore-color {
+  color: gold;
+  z-index: 1;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+.player-lost {
+  color: rgb(17, 17, 17);
+  z-index: 1;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8em;
+  font-weight: 700;
+}
