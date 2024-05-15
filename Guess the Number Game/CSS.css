@@ -1,0 +1,134 @@
+body {
+  box-sizing: border-box;
+  background: linear-gradient(
+    to top,
+    rgb(169, 241, 241),
+    rgba(240, 255, 255, 0.3)
+  );
+
+  margin: 3% 10%;
+  height: 100vh;
+
+  justify-content: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+h1 {
+  color: grey;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 20px 20px 0px 0px;
+  margin: 20px;
+  padding: 5px 10px;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0px 0px 10px 1px rgb(69, 121, 121);
+  text-align: center;
+}
+h1 span {
+  text-decoration: line-through;
+  font-style: italic;
+  font-weight: 700;
+  color: black;
+}
+
+section {
+  margin: 0px 100px;
+  height: 30vh;
+  background-color: #faebd7;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px black;
+}
+
+button {
+  width: 90px;
+  height: 35px;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.one {
+  border-bottom: 5px solid black;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 30px;
+}
+.one .ONE_part_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one .ONE_part_2 {
+  position: relative;
+  top: -50px;
+}
+
+.one .ONE_part_2 p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 4em;
+}
+.one .ONE_part_2 div {
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+  padding: 15px 15px;
+  width: 50px;
+  position: relative;
+  left: 45%;
+  font-size: 2rem;
+}
+
+.two {
+  padding-top: 80px;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px solid black;
+  border-radius: 20px 20px 0px 0px;
+}
+.two .TWO_part_1 {
+  display: flex;
+  flex-direction: column;
+}
+.two .TWO_part_1 input {
+  margin-bottom: 20px;
+  width: 90%;
+  height: 30%;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+.two .TWO_part_1 button {
+  position: relative;
+  left: 20%;
+}
+
+.two .TWO_part_2 {
+  position: relative;
+  top: -17%;
+}
+
+.two .TWO_part_2 div {
+  margin-top: 40px;
+}
+
+.two .TWO_part_2 div p {
+  margin: 0px;
+}
+
+input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
